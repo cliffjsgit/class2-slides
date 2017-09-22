@@ -1600,7 +1600,7 @@ Note:
 # prints table like this:
 #
 # a   mysqrt(a)      math.sqrt(a)   diff
-# -   ---------      ------------   ----
+# _   _________      ____________   ____
 # 1.0 1.0            1.0            0.0
 # 2.0 1.41421356237  1.41421356237  2.22044604925e-16
 # 3.0 1.73205080757  1.73205080757  0.0
@@ -1632,7 +1632,7 @@ Note:
 # prints table like this:
 #
 # a   mysqrt(a)      math.sqrt(a)   diff
-# -   ---------      ------------   ----
+# _   _________      ____________   ____
 # 1.0 1.0            1.0            0.0
 # 2.0 1.41421356237  1.41421356237  2.22044604925e-16
 # 3.0 1.73205080757  1.73205080757  0.0
@@ -1827,32 +1827,6 @@ print(estimate_pi())
 -----
 
 ### Chapter 8 - Strings
-
-+++++
-
-### Exercise 8-1
-
-Note:
-
-+++++
-
-#### Question 1
-
-+++++
-
-```python
-#!/usr/bin/env python3
-
-# 1. We've seen that n = 42 is legal. What about 42 = n?
-```
-
-+++++
-
-```python
-#!/usr/bin/env python3
-
-# 1. We've seen that n = 42 is legal. What about 42 = n?
-```
 
 +++++
 

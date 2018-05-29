@@ -10,7 +10,7 @@ revealOptions:
 ### ITSE-1402 Intermediate Python
 <span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 2: Python Review</span>
 <br /><br />
-##### [https://z3r0.tech/slides-2](https://z3r0.tech/slides-2)
+##### [https://coder.run/1402-class2](https://coder.run/1402-class2)
 
 -----
 
@@ -22,7 +22,7 @@ revealOptions:
 
 +++++
 
-[https://z3r0.tech/1402-review](https://z3r0.tech/1402-review)
+[https://coder.run/1402-review](https://coder.run/1402-review)
 
 Note:
 Let's get the review repo cloned in. 
@@ -44,23 +44,23 @@ We'll start off our review with some basic review of syntax.
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 1. In a print statement, what happens if you leave out one of the
-# parentheses, or both?")
-```
+# 1. In a print statement, what happens if you leave out 
+# one of the parentheses, or both?
+</code></pre>
 
 Note:
 There is a couple different ways this can play out depending on how you interpret it. 
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 1. In a print statement, what happens if you leave out one of the
-# parentheses, or both?")
+# 1. In a print statement, what happens if you leave out
+# one of the parentheses, or both?
 
 print'test')
 # One parenthesis:
@@ -75,7 +75,7 @@ print 'test'
 #       print 'test'
 #                   ^
 #   SyntaxError: Missing parentheses in call to 'print'
-```
+</code></pre>
 
 Note:
 The difference is in the first part of the question. If you do space and one parenthesis, you get the same answer as the second.
@@ -86,23 +86,25 @@ The difference is in the first part of the question. If you do space and one par
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. If you are trying to print a string, what happens if you leave out one of
-# the quotation marks, or both?
-```
+# 2. If you are trying to print a string, what happens if
+# you leave out one of you leave out one of the quotation
+# marks, or both?
+</code></pre>
 
 Note:
 Does this one have a similar property to the one before? Or will the answer be the same both ways?
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. If you are trying to print a string, what happens if you leave out one of
-# the quotation marks, or both?
+# 2. If you are trying to print a string, what happens if
+# you leave out one of you leave out one of the quotation
+# marks, or both?
 
 print('test)
 # One quotation
@@ -116,7 +118,7 @@ print(test)
 #   Traceback (most recent call last):
 #     File "<stdin>", line 1, in <module>
 #   NameError: name 'test' is not defined
-```
+</code></pre>
 
 Note:
 Unlike the other example either parenthesis left out leads to the same result. 
@@ -127,24 +129,26 @@ Unlike the other example either parenthesis left out leads to the same result.
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 3. You can use a minus sign to make a negative number like -2. What happens 
-# if you put a plus sign before a number? What about 2++2?
-```
+# 3. You can use a minus sign to make a negative number like -2. 
+# What happens if you put a plus sign before a number? What
+# about 2++2?
+</code></pre>
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 3. You can use a minus sign to make a negative number like -2. What happens 
-# if you put a plus sign before a number? What about 2++2?
+# 3. You can use a minus sign to make a negative number like -2. 
+# What happens if you put a plus sign before a number? What
+# about 2++2?
 
 # -2 == -2
 # +2 == +2
 # 2++2 == 4
-```
+</code></pre>
 
 +++++
 
@@ -152,27 +156,27 @@ Unlike the other example either parenthesis left out leads to the same result.
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 4. In math notation, leading zeros are okay, as in 02. What happens if you 
-# try this in Python?
-```
+# 4. In math notation, leading zeros are okay, as in 02. What
+# happens if you try this in Python?
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 4. In math notation, leading zeros are okay, as in 02. What happens if you 
-# try this in Python?
+# 4. In math notation, leading zeros are okay, as in 02. What
+# happens if you try this in Python?
 
 # 02
 #     File "<stdin>", line 1
 #       02
 #        ^
 #   SyntaxError: invalid token
-```
+</code></pre>
 
 Note:
 In python2 the leading zero makes python interpret it as octal. In python3, it results in a syntax error. 
@@ -183,18 +187,18 @@ In python2 the leading zero makes python interpret it as octal. In python3, it r
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 5. What happens if you have two values with no operator between them?"
-```
+# 5. What happens if you have two values with no operator between them?
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 5. What happens if you have two values with no operator between them?"
+# 5. What happens if you have two values with no operator between them?
 
 # No space
 #   Traceback (most recent call last):
@@ -206,7 +210,7 @@ In python2 the leading zero makes python interpret it as octal. In python3, it r
 #       a b
 #         ^
 #     SyntaxError: invalid syntax
-```
+</code></pre>
 
 Note:
 Obviously 2 numbers next to each other makes whatver number it is. 5 and 5 = 55. When you do it with two variables, we get different results.
@@ -224,22 +228,22 @@ This time we are using the interpreter as a calculator just to see how python wo
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. How many seconds are there in 42 minutes 42 seconds?
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. How many seconds are there in 42 minutes 42 seconds?
 x = (42*60)+42
 print(x)
 # 2562
-```
+</code></pre>
 
 +++++
 
@@ -247,39 +251,39 @@ print(x)
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. How many miles are there in 10 kilometers? Hint: there are 1.61 kilometers 
-# in a mile.
-```
+# 2. How many miles are there in 10 kilometers? Hint: there are 
+# 1.61 kilometers in a mile.
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. How many miles are there in 10 kilometers? Hint: there are 1.61 kilometers 
-# in a mile.
+# 2. How many miles are there in 10 kilometers? Hint: there are 
+# 1.61 kilometers in a mile.
 x = 10/1.61
 print(x)
 # 6.211180124223602
-```
+</code></pre>
 
 Note:
 This is a little messy, so we can clean it up with format.
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. How many miles are there in 10 kilometers? Hint: there are 1.61 kilometers 
-# in a mile.
+# 2. How many miles are there in 10 kilometers? Hint: there are 
+# 1.61 kilometers in a mile.
 x = 10/1.61
 print('{:03.2f}'.format(x))
 # 6.21dd
-```
+</code></pre>
 
 Note:
 In short, this specifies the precision for floating point numbers. It's specifying that we want at least 3 numbers, with two trailing after the decimal. 
@@ -290,27 +294,27 @@ https://pyformat.info/ is your friend when it comes to these formats. We'll also
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 3. If you run a 10 kilometer race in 42 minutes 42 seconds, what is your 
-# average pace (time per mile in minutes and seconds)? What is your average
-# speed in miles per hour?
-```
+# 3. If you run a 10 kilometer race in 42 minutes 42 seconds, what 
+# is your average pace (time per mile in minutes and seconds)? What
+# is your average speed in miles per hour?
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 3. If you run a 10 kilometer race in 42 minutes 42 seconds, what is your 
-# average pace (time per mile in minutes and seconds)? What is your average
-# speed in miles per hour?")
+# 3. If you run a 10 kilometer race in 42 minutes 42 seconds, what 
+# is your average pace (time per mile in minutes and seconds)? What
+# is your average speed in miles per hour?
 
 answer1=((42*60)+42)/(10/1.61)/60
 answer2=60/answer1
 print("Min per mile:\t{:03.2f}\nMPH:\t\t{:03.2f}\n".format(answer1,answer2))  
-```
+</code></pre>
 
 Note: We start with our the answer to question 1. Divide that by the answer to question 2. Then we divide that by 60 to get our minutes per mile. For the miles per hour, we divide 60 by the minutes per mile.
 
@@ -330,15 +334,15 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. We've seen that n = 42 is legal. What about 42 = n?
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. We've seen that n = 42 is legal. What about 42 = n?
@@ -346,7 +350,7 @@ Note:
 # >>> 42 = n
 #   File "<stdin>", line 1
 # SyntaxError: can't assign to literal
-```
+</code></pre>
 
 +++++
 
@@ -354,15 +358,15 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. How about x = y = 1?
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. How about x = y = 1?
@@ -370,7 +374,7 @@ Note:
 x=y=1
 answer1=x  # 1
 answer2=y  # 1
-```
+</code></pre>
 
 +++++
 
@@ -378,17 +382,17 @@ answer2=y  # 1
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 3. In some languages every statement ends with a semicolon, ;. What 
 # happens if you put a semicolon at the end of a Python statement? 
 # (print some arbitrary value assigned with ';' at the end)
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 3. In some languages every statement ends with a semicolon, ;. What 
@@ -396,7 +400,7 @@ answer2=y  # 1
 # (print some arbitrary value assigned with ';' at the end)
 
 print(4); # Success!
-```
+</code></pre>
 
 +++++
 
@@ -404,21 +408,21 @@ print(4); # Success!
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 4. What if you put a period at the end of a statement?
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 4. What if you put a period at the end of a statement?
 
 print(4). # SyntaxError: invalid syntax
-```
+</code></pre>
 
 +++++
 
@@ -432,24 +436,24 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 1.The volume of a sphere with radius r is (4/3)pir^3. What is the volume 
-# of a sphere with radius 5?
-```
+# 1.The volume of a sphere with radius r is (4/3)pir^3. What is the 
+# volume of a sphere with radius 5?
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 1.The volume of a sphere with radius r is (4/3)pir^3. What is the volume 
-# of a sphere with radius 5?
+# 1.The volume of a sphere with radius r is (4/3)pir^3. What is the 
+# volume of a sphere with radius 5?
 
 from math import pi
 answer1=(4.0/3.0)*pi*(5**3)   # 523.5987755982989
-```
+</code></pre>
 
 +++++
 
@@ -457,25 +461,27 @@ answer1=(4.0/3.0)*pi*(5**3)   # 523.5987755982989
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. Suppose the cover price of a book is $24.95, but bookstores get a 40% 
-# discount. Shipping costs $3 for the first copy and 75 cents for each 
-# additional copy. What is the total wholesale cost for 60 copies?
-```
+# 2. Suppose the cover price of a book is $24.95, but bookstores 
+# get a 40% discount. Shipping costs $3 for the first copy and 75 
+# cents for each additional copy. What is the total wholesale cost
+# for 60 copies?
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. Suppose the cover price of a book is $24.95, but bookstores get a 40% 
-# discount. Shipping costs $3 for the first copy and 75 cents for each 
-# additional copy. What is the total wholesale cost for 60 copies?
+# 2. Suppose the cover price of a book is $24.95, but bookstores 
+# get a 40% discount. Shipping costs $3 for the first copy and 75 
+# cents for each additional copy. What is the total wholesale cost
+# for 60 copies?
 
 answer1=24.95*0.6*60+0.75*(60-1)+3   # 945.4499999999999
-```
+</code></pre>
 
 +++++
 
@@ -483,22 +489,22 @@ answer1=24.95*0.6*60+0.75*(60-1)+3   # 945.4499999999999
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 3. If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15  
-# per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at an easy 
-# pace again, what time do I get home for breakfast?
-```
+# 3. If I leave my house at 6:52 am and run 1 mile at an easy pace   
+# (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile
+# at an easy pace again, what time do I get home for breakfast?
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 3. If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15  
-# per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at an easy 
-# pace again, what time do I get home for breakfast?
+# 3. If I leave my house at 6:52 am and run 1 mile at an easy pace   
+# (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile
+# at an easy pace again, what time do I get home for breakfast?
 
 start = (6*60+52)*60
 easy = (8*60+15)*2
@@ -507,7 +513,7 @@ finish_hour = (start + easy + fast)/(60*60.0)
 finish_floored = (start + easy + fast)//(60*60)
 finish_minute  = (finish_hour - finish_floored)*60
 answer1="{:02d}:{:02d}".format(finish_floored,finish_minute)  # 7:30
-```
+</code></pre>
 
 -----
 
@@ -525,17 +531,17 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Write a function named right_justify that takes a string named  
 # s as a parameter and prints the string with enough leading spaces  
 # so that the last letter of the string is in column 70 of the display.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Write a function named right_justify that takes a string named  
@@ -545,7 +551,7 @@ Note:
 def right_justify(rstr):
     return ' ' * (70 - len(rstr)) + rstr
 answer1=right_justify("monty") # 
-```
+</code></pre>
 
 Note:
 Can be done with format: 
@@ -563,19 +569,19 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# A function object is a value you can assign to a variable or pass as  
-# an argument. For example, do_twice is a function that takes a function 
-# object as an argument and calls it twice:
+# A function object is a value you can assign to a variable or pass   
+# as an argument. For example, do_twice is a function that takes a 
+# function object as an argument and calls it twice:
 #
 # def do_twice(f):
 #     f()
 #     f()
 #
-# Here's an example that uses do_twice to call a function named print_spam 
-# twice:
+# Here's an example that uses do_twice to call a function named  
+# print_spam twice:
 #
 # def print_spam():
 #     print('spam')
@@ -583,23 +589,23 @@ Note:
 #
 # Question 1
 # 1. Type this example into a script and test it.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# A function object is a value you can assign to a variable or pass as  
-# an argument. For example, do_twice is a function that takes a function 
-# object as an argument and calls it twice:
+# A function object is a value you can assign to a variable or pass   
+# as an argument. For example, do_twice is a function that takes a 
+# function object as an argument and calls it twice:
 #
 # def do_twice(f):
 #     f()
 #     f()
 #
-# Here's an example that uses do_twice to call a function named print_spam 
-# twice:
+# Here's an example that uses do_twice to call a function named  
+# print_spam twice:
 #
 # def print_spam():
 #     print('spam')
@@ -616,7 +622,7 @@ def print_spam():
     do_twice(print_spam)
 print_spam()
 # This function causes an infinite loop
-```
+</code></pre>
 
 +++++
 
@@ -624,31 +630,31 @@ print_spam()
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. Modify do_twice so that it takes two arguments, a function object 
-# and a value, and calls the function twice, passing the value as an 
-# argument.
+# 2. Modify do_twice so that it takes two arguments, a function 
+# object and a value, and calls the function twice, passing the  
+# value as an argument.
 #
 # Hint: you will need rename the function to "do_twice_2"
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# 2. Modify do_twice so that it takes two arguments, a function object 
-# and a value, and calls the function twice, passing the value as an 
-# argument.
+# 2. Modify do_twice so that it takes two arguments, a function 
+# object and a value, and calls the function twice, passing the  
+# value as an argument.
 #
 # Hint: you will need rename the function to "do_twice_2"
 
 def do_twice2(f,v):
     f(v)
     f(v)
-```
+</code></pre>
 
 +++++
 
@@ -656,7 +662,7 @@ def do_twice2(f,v):
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 3. Copy the definition of print_twice from earlier in this chapter  
@@ -666,11 +672,11 @@ def do_twice2(f,v):
 #     print(bruce)
 #     print(bruce)
 #
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 3. Copy the definition of print_twice from earlier in this chapter  
@@ -683,7 +689,7 @@ def do_twice2(f,v):
 def print_twice(bruce):
     print(bruce)
     print(bruce)
-```
+</code></pre>
 
 +++++
 
@@ -691,16 +697,16 @@ def print_twice(bruce):
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 4. Use the modified version of do_twice to call print_twice twice,  
 # passing 'spam' as an argument.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 4. Use the modified version of do_twice to call print_twice twice,  
@@ -715,7 +721,7 @@ def print_twice(bruce):
     print(bruce)
 
 do_twice2(print_twice,"spam") # prints spam four times
-```
+</code></pre>
 
 +++++
 
@@ -723,18 +729,18 @@ do_twice2(print_twice,"spam") # prints spam four times
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 5. Define a new function called do_four that takes a function object  
 # and a value and calls the function four times, passing the value as  
 # a parameter. There should be only two statements in the body of this
 # function, not four.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 5. Define a new function called do_four that takes a function object  
@@ -755,7 +761,7 @@ def do_four(f,v):
     do_twice2(f,v)
 
 do_four(print_twice,"spam")   # print spam 8 times
-```
+</code></pre>
 
 +++++
 
@@ -769,7 +775,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Write a function that draws a grid like the following:
@@ -785,14 +791,14 @@ Note:
 # |         |         |
 # |         |         | 
 # + - - - - + - - - - +
-```
+</code></pre>
 
 Note:
 Focus only on using methods we've talked about so far. Namely print and recursive fuctions
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Write a function that draws a grid like the following:
@@ -824,7 +830,7 @@ def draw_grid():
     print(inter)
 
 draw_grid()
-```
+</code></pre>
 
 +++++
 
@@ -832,16 +838,16 @@ draw_grid()
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. Write a function that draws a similar grid with four rows and four 
 # columns.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. Write a function that draws a similar grid with four rows and four 
@@ -860,7 +866,7 @@ def draw_double_grid():
     print_four(line)
     print(inter)
 draw_double_grid()
-```
+</code></pre>
 
 -----
 
@@ -878,7 +884,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # The time module provides a function, also named time, that 
@@ -894,11 +900,11 @@ Note:
 # 1. Write a script that reads the current time and converts it
 # to a time of day in hours, minutes, and seconds, plus the number
 # of days since the epoch.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # The time module provides a function, also named time, that 
@@ -917,16 +923,19 @@ Note:
 
 import time
 epoch = time.time()
-
-days_since_epoch = int(epoch // (24 * 60 * 60))     # epoch // seconds_in_a_day
-hours = int(epoch % (24 * 60 * 60) // 3600)         # (epoch % seconds_in_a_day) // seconds_in_an_hour
-minutes = int(epoch % (24 * 60 * 60) % 3600 // 60)  # (epoch % seconds_in_a_day) % seconds_in_an_hour // seconds_in_a_minute
-seconds = int(epoch % (24 * 60 * 60) % 3600 % 60)   # (epoch % seconds_in_a_day) % seconds_in_an_hour % seconds_in_a_minute
+# epoch // seconds_in_a_day
+days_since_epoch = int(epoch // (24 * 60 * 60))
+# (epoch % seconds_in_a_day) // seconds_in_an_hour
+hours = int(epoch % (24 * 60 * 60) // 3600)
+# (epoch % seconds_in_a_day) % seconds_in_an_hour // seconds_in_a_minute
+minutes = int(epoch % (24 * 60 * 60) % 3600 // 60)
+# (epoch % seconds_in_a_day) % seconds_in_an_hour % seconds_in_a_minute
+seconds = int(epoch % (24 * 60 * 60) % 3600 % 60)
 answer1="{:02d}:{:02d}:{:02d}".format(hours,minutes,seconds)
 answer2=days_since_epoch
 print("Time (GMT): {}\n".format(answer1)+
       "Days Since epoch: {}".format(answer2))
-```
+</code></pre>
 
 +++++
 
@@ -940,7 +949,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # Fermat's Last Theorem says that there are no positive integers
@@ -956,11 +965,11 @@ Note:
 # "Holy smokes, Fermat was wrong!" Otherwise the program should 
 # print, "No, that doesn't work."
 
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # Fermat's Last Theorem says that there are no positive integers
@@ -981,7 +990,7 @@ def check_fermat(a,b,c,n):
             print("Holy Smokes, Fermat was wrong!")
       else:
             print("No, that doesn't work.")
-```
+</code></pre>
 
 +++++
 
@@ -989,17 +998,17 @@ def check_fermat(a,b,c,n):
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. Write a function that prompts the user to input values for a,
 # b, c and n, converts them to integers, and uses check_fermat to
 # check whether they violate Fermat's theorem.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. Write a function that prompts the user to input values for a,
@@ -1014,7 +1023,7 @@ def ask_fermat():
     
       check_fermat(int(a), int(b), int(c), int(n))
 ask_fermat()
-```
+</code></pre>
 
 +++++
 
@@ -1028,7 +1037,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # If you are given three sticks, you may or may not be able
@@ -1047,11 +1056,11 @@ Note:
 # as arguments, and that prints either "Yes" or "No", depending on
 # whether you can or cannot form a triangle from sticks with the 
 # given lengths
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # If you are given three sticks, you may or may not be able
@@ -1076,7 +1085,7 @@ def is_triangle(x,y,z):
         print("No")
     else:
         print("Yes")
-```
+</code></pre>
 
 +++++
 
@@ -1084,18 +1093,18 @@ def is_triangle(x,y,z):
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. Write a function that prompts the user to input three
 # stick lengths, converts them to integers, and uses 
 # is_triangle to check whether sticks with the given
 # lengths can form a triangle.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. Write a function that prompts the user to input three
@@ -1111,7 +1120,7 @@ def ask_triangle():
     is_triangle(int(a), int(b), int(c))
 answer1=ask_triangle()
 
-```
+</code></pre>
 
 +++++
 
@@ -1125,7 +1134,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. What is the output of the following program? Draw a stack
@@ -1138,11 +1147,11 @@ Note:
 #    else:
 #        recurse(n-1, n+s) 
 # recurse(3, 0)
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. What is the output of the following program? Draw a stack
@@ -1173,7 +1182,7 @@ recurse:
 Program prints:
 6   
 """
-```
+</code></pre>
 
 +++++
 
@@ -1181,36 +1190,36 @@ Program prints:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. What would happen if you called this function like this:
 # recurse(-1, 0)?
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 2. What would happen if you called this function like this:
 # recurse(-1, 0)?
 
 # Continues infinitely
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 3. Write a docstring that explains everything someone would
 # need to know in order to use this function (and nothing else).
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 3. Write a docstring that explains everything someone would
@@ -1221,7 +1230,7 @@ computes value of s
 n -> any positive integer
 s -> any integer
 """
-```
+</code></pre>
 
 -----
 
@@ -1239,7 +1248,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Draw a stack diagram for the following program. What does
@@ -1262,11 +1271,11 @@ Note:
 # x = 1
 # y = x + 1
 # print(c(x, y+3, x+y))
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Draw a stack diagram for the following program. What does
@@ -1312,7 +1321,7 @@ Prints:
 (9, 90)
 8100   
 """
-```
+</code></pre>
 
 +++++
 
@@ -1326,7 +1335,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # Question 1
@@ -1338,11 +1347,11 @@ Note:
 # function. Use your function to evaluate ack(3, 4),
 # which should be 125. What happens for larger values
 # of m and n?
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # Question 1
@@ -1363,7 +1372,7 @@ def ack(m, n):
     elif m > 0 and n > 0:
         return ack(m - 1, ack(m, n - 1))
 answer1 = ack(3, 4)
-```
+</code></pre>
 
 +++++
 
@@ -1377,15 +1386,16 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# A palindrome is a word that is spelled the same backward and forward, like 
-# "noon" and "redivider". Recursively, a word is a palindrome if the first and 
-# last letters are the same and the middle is a palindrome.
+# A palindrome is a word that is spelled the same backward and 
+# forward, like  "noon" and "redivider". Recursively, a word is 
+# a palindrome if the first and last letters are the same and the 
+# middle is a palindrome.
 #
-# The following are functions that take a string argument and return the first, 
-# last, and middle letters:
+# The following are functions that take a string argument and
+# return the first, last, and middle letters:
 #
 # def first(word):
 #     return word[0]
@@ -1398,27 +1408,30 @@ Note:
 #
 # We'll see how they work in Chapter 8.
 #
-# This allows you to use the functions from palindrome.py for the two questions
+# This allows you to use the functions from palindrome.py for the
+# two questions.
 #
 import palindrome
 #
 # Question 1
-# 1. Type these functions into a file named palindrome.py and test them out. 
-# What happens if you call middle with a string with two letters? One letter? 
-# What about the empty string, which is written '' and contains no letters?
-```
+# 1. Type these functions into a file named palindrome.py and 
+# test them out. What happens if you call middle with a string
+# with two letters? One letter? What about the empty string,
+# which is written '' and contains no letters?
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
-# A palindrome is a word that is spelled the same backward and forward, like 
-# "noon" and "redivider". Recursively, a word is a palindrome if the first and 
-# last letters are the same and the middle is a palindrome.
+# A palindrome is a word that is spelled the same backward and 
+# forward, like  "noon" and "redivider". Recursively, a word is 
+# a palindrome if the first and last letters are the same and the 
+# middle is a palindrome.
 #
-# The following are functions that take a string argument and return the first, 
-# last, and middle letters:
+# The following are functions that take a string argument and
+# return the first, last, and middle letters:
 #
 # def first(word):
 #     return word[0]
@@ -1431,17 +1444,19 @@ import palindrome
 #
 # We'll see how they work in Chapter 8.
 #
-# This allows you to use the functions from palindrome.py for the two questions
+# This allows you to use the functions from palindrome.py for the
+# two questions.
 #
 import palindrome
 #
 # Question 1
-# 1. Type these functions into a file named palindrome.py and test them out. 
-# What happens if you call middle with a string with two letters? One letter? 
-# What about the empty string, which is written '' and contains no letters?
+# 1. Type these functions into a file named palindrome.py and 
+# test them out. What happens if you call middle with a string
+# with two letters? One letter? What about the empty string,
+# which is written '' and contains no letters?
 
 # It prints an empty string.
-```
+</code></pre>
 
 +++++
 
@@ -1449,7 +1464,7 @@ import palindrome
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 import palindrome
@@ -1458,11 +1473,11 @@ import palindrome
 # argument and returns True if it is a palindrome and False
 # otherwise. Remember that you can use the built-in function 
 # len to check the length of a string.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 import palindrome
@@ -1482,7 +1497,7 @@ def is_palindrome(word):
             return is_palindrome(palindrome.middle(word))
     else:
         return False
-```
+</code></pre>
 
 +++++
 
@@ -1496,18 +1511,18 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. A number, a, is a power of b if it is divisible by b and a/b
 # is a power of b. Write a function called is_power that takes 
 # parameters a and b and returns True if a is a power of b. 
 # Hint: you will have to think about the base case.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. A number, a, is a power of b if it is divisible by b and a/b
@@ -1522,7 +1537,7 @@ def is_power(a, b):
         return is_power(a/b, b)
     else:
         return False
-```
+</code></pre>
 
 +++++
 
@@ -1537,7 +1552,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. The greatest common divisor (GCD) of a and b is the
@@ -1549,11 +1564,11 @@ Note:
 #
 # Write a function called gcd that takes parameters a and b
 # and returns their greatest common divisor.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. The greatest common divisor (GCD) of a and b is the
@@ -1570,7 +1585,7 @@ def gcd(a, b):
     if b == 0:
         return a
     return gcd(b, a % b) 
-```
+</code></pre>
 
 -----
 
@@ -1588,7 +1603,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Copy the loop from Section 7.5 and encapsulate it in a 
@@ -1616,11 +1631,11 @@ Note:
 # the third column is the square root computed by math.sqrt;
 # the fourth column is the absolute value of the difference
 # between the two estimates.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. Copy the loop from Section 7.5 and encapsulate it in a 
@@ -1673,7 +1688,7 @@ def test_square_root(list_of_a):
     print(t)
 
 test_square_root(range(1,10))
-```
+</code></pre>
 
 +++++
 
@@ -1687,7 +1702,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # The built-in function eval takes a string and evaluates it
@@ -1707,11 +1722,11 @@ Note:
 # eval, and prints the result. It should continue until the user
 # enters 'done', and then return the value of the last expression
 # it evaluated.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # The built-in function eval takes a string and evaluates it
@@ -1744,7 +1759,7 @@ def eval_loop():
     print(result)
 
 eval_loop()
-```
+</code></pre>
 
 +++++
 
@@ -1758,7 +1773,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. The mathematician Srinivasa Ramanujan found an infinite
@@ -1774,11 +1789,11 @@ Note:
 # for 10**-15).
 #
 # You can check the result by comparing it to math.pi.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. The mathematician Srinivasa Ramanujan found an infinite
@@ -1822,7 +1837,7 @@ def estimate_pi():
     return 1 / total
 
 print(estimate_pi())
-```
+</code></pre>
 
 -----
 
@@ -1840,17 +1855,17 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. There is a string method called count that is similar to the  
 # function in Section 8.7. Read the documentation of this method  
 # and write an invocation that counts the number of a's in 'banana'.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. There is a string method called count that is similar to the  
@@ -1859,7 +1874,7 @@ Note:
 
 word = 'banana'
 print(word.count('a'))   # 3
-```
+</code></pre>
 
 +++++
 
@@ -1873,7 +1888,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. A string slice can take a third index that specifies the
@@ -1889,11 +1904,11 @@ Note:
 # slice [::-1] generates a reversed string. Use this idiom
 # to write a one-line version of is_palindrome from Exercise 
 # 6.3.
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. A string slice can take a third index that specifies the
@@ -1912,7 +1927,7 @@ Note:
 
 def is_palindrome(word):
     return word == word[::-1]
-```
+</code></pre>
 
 +++++
 
@@ -1926,7 +1941,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. The following functions are all INTENDED to check whether a
@@ -1965,11 +1980,11 @@ def any_lowercase5(s):
         if not c.islower():
             return False
     return True
-```
+</code></pre>
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # 1. The following functions are all INTENDED to check whether a
@@ -2022,7 +2037,7 @@ def any_lowercase5(s):
         if not c.islower():
             return False
     return True
-```
+</code></pre>
 
 +++++
 
@@ -2037,7 +2052,7 @@ Note:
 
 +++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # A Caesar cypher is a weak form of encryption that involves 
@@ -2070,11 +2085,11 @@ Note:
 # Potentially offensive jokes on the Internet are sometimes encoded
 # in ROT13, which is a Caesar cypher with rotation 13. If you are 
 # not easily offended, find and decode some of them.
-```
+</code></pre>
 
-++++
++++++
 
-```python
+<pre class="stretch"><code class="python" data-trim data-noescape>
 #!/usr/bin/env python3
 
 # A Caesar cypher is a weak form of encryption that involves 
@@ -2128,8 +2143,4 @@ def rotate_word(word, n):
 
 print(rotate_word("cheer", 7))
 print(rotate_word("IBM", -1))
-```
-
------
-
-
+</code></pre>

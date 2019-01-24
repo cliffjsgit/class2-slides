@@ -10,7 +10,7 @@ revealOptions:
 ### ITSE-1402 Intermediate Python
 <span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 2: Python Review</span>
 <br /><br />
-##### [https://coder.run/1402-class2](https://coder.run/1402-class2)
+##### [https://bit.ly/1402-class2](https://bit.ly/1402-class2)
 
 -----
 
@@ -22,7 +22,7 @@ revealOptions:
 
 +++++
 
-[https://coder.run/1402-review](https://coder.run/1402-review)
+[https://bit.ly/1402-review](https://bit.ly/1402-review)
 
 Note:
 Let's get the review repo cloned in. 

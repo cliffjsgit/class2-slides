@@ -22,7 +22,7 @@ revealOptions:
 
 +++++
 
-- [https://bit.ly/1402-csarcade](https://bit.ly/1402-csarcade)
+- [https://app.codesignal.com/](https://app.codesignal.com/)
 - [https://bit.ly/1402-review](https://bit.ly/1402-review)
 
 Note:

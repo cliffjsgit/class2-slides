@@ -23,7 +23,6 @@ revealOptions:
 +++++
 
 - [https://app.codesignal.com/](https://app.codesignal.com/)
-- [https://bit.ly/1402-review](https://bit.ly/1402-review)
 
 Note:
 We'll be working with a couple different places during our reviewing. Part of it will be in CodeSignal partially to get into the flow of using it and part of it will be from the book. We'll start with the book.
